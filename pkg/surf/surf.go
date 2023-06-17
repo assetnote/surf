@@ -30,7 +30,7 @@ func Run() {
 ███████║╚██████╔╝██║  ██║██║     
 ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝         
                                  
-by shubs @ assetnote                                 
+by assetnote                             
 	`)
 
 	p := arg.MustParse(&args)
