@@ -1,0 +1,24 @@
+before:
+  hooks:
+    - go mod download
+builds:
+  - binary: surf
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - 386
+    ignore:
+      - goos: darwin
+        goarch: 386
+    main: ./cmd/surf/
+archives:
+  - id: tgz
+    format: tar.gz
+    replacements:
+        darwin: macOS
+    format_overrides:
+        - goos: windows
+          format: zip
