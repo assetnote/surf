@@ -95,12 +95,12 @@ by shubs @ assetnote
 	internalHosts, externalHosts := processHosts(failedHosts)
 
 	// print the results
-	fmt.Println("\n\nInternal Hosts:")
+	fmt.Println("\nInternal Hosts:")
 	for host, ips := range internalHosts {
 		fmt.Println(host, ips)
 	}
 
-	fmt.Println("\n\nExternal Hosts:")
+	fmt.Println("\nExternal Hosts:")
 	for host, ips := range externalHosts {
 		fmt.Println(host, ips)
 	}
