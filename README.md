@@ -9,6 +9,8 @@
 
 You can then attempt these hosts wherever an SSRF vulnerability may be present. Due to most SSRF filters only focusing on internal or restricted IP ranges, you'll be pleasantly surprised when you get SSRF on an external IP that is not accessible via HTTP(s) from your machine.
 
+Often you will find that large companies with cloud environments will have external IPs for internal web apps. Traditional SSRF filters will not capture this unless these hosts are specifically added to a blacklist (which they usually never are). This is why this technique can be so powerful.
+
 # Installation
 
 This tool requires go 1.19 or above as we rely on [httpx](https://github.com/projectdiscovery/httpx) to do the HTTP probing.
